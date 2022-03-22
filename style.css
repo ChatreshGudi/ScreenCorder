@@ -1,0 +1,82 @@
+:root{
+    --blue: rgb(0, 68, 255);
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+button {
+    background: white;
+    border: 1px solid var(--blue);
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--blue);
+}
+
+button:hover {
+    background: var(--blue);
+    border: 1px solid white;
+    color:white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+video {
+    margin: auto;
+    height: 90vh;
+    display: block;
+}
+
+#Toolbar{
+    align-items: center;
+    text-align: center; 
+    border: 1px solid var(--blue);
+    padding: 5px; 
+    border-radius: 5px;
+    background: var(--blue);
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    padding: 10px;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    color: var(--blue);
+    outline: none;
+    background-color: #fff;
+    line-height: inherit;
+}
+select:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: var(--blue);
+}
+
+div#audioSRC{
+    padding: 10px;
+    display:flex;
+    width: 220px;
+    border: #fff;
+    background-color: #fff;
+    color: var(--blue);
+    border-radius: 5px;
+}
+#audioSRC input{
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    display: inline-flex;
+}
+
+p.Title{
+    color: white;
+    font-weight: bold;
+    position:fixed; 
+    left: 10px;
+    font-size: 20px;
+    font-family: arial;
+}

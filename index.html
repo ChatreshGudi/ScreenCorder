@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href = "style.css"></link>
+</head>
+<body>
+    <div>
+        <video controls="true" style="display:none" id="videoResult" src=""></video>
+        <video id="recording" autoplay></video>
+    </div>
+    <div id = "Toolbar">
+        <p class="Title" >ScreenCorder</p>
+        <button id="startBtn"  onclick="startRecord()">Start recording</button>
+        <button id="stopBtn" style="display:none" onclick="stopScreen()">Stop recording</button>
+        <button id="mic" onclick="mic()">Unmute Audio</button>
+        <a href="#"  id="downloadbtn" style="display:none"><button> Download Video </button></a>
+        <select id="videoSRC">
+            <option value = "cam">Camera</option>
+            <option value = "scr" selected>Screen</option>
+        </select>
+        <div id = "audioSRC" >
+            <input type="checkbox" value = "mic">Microphone</input>
+            <input type = "checkbox" value="deskaudio" selected>Desktop Audio</input>
+        </select>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
